@@ -1132,7 +1132,7 @@
             input, input_len=input_len, model=self.vad_model, kwargs=self.vad_kwargs, **cfg
         )
         end_vad = time.time()
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/auto/auto_model.py#L598" target="_blank" class="src-more">View full source →</a></details></div><div class="mblk"><code>.export(input, **cfg)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/auto/auto_model.py#L917" target="_blank" class="gh-link">L917</a><div class="mdoc"><p>Export model to ONNX format.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/auto/auto_model.py#L598" target="_blank" class="src-more">View full source →</a></details></div><div class="mblk"><code>.export(input, **cfg)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/auto/auto_model.py#L931" target="_blank" class="gh-link">L931</a><div class="mdoc"><p>Export model to ONNX format.</p>
 <p>Creates a deep copy of the model to isolate ONNX operator monkey-patching,</p>
 <p>then runs torch.onnx.export. The original model remains usable after export.</p>
 <h4>Args:</h4>
@@ -1177,7 +1177,7 @@
 
         device = cfg.get(&quot;device&quot;, &quot;cpu&quot;)
         
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/auto/auto_model.py#L917" target="_blank" class="src-more">View full source →</a></details></div></div>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/auto/auto_model.py#L931" target="_blank" class="src-more">View full source →</a></details></div></div>
 <div class="api-detail" id="e4"><span class="dtag badge-m">method</span><h2><code>AutoModel.build_model(**kwargs)</code></h2><div class="dmod">funasr.auto.auto_model.AutoModel · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/auto/auto_model.py#L281" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Download model from hub, build all components, and load pretrained weights.</p>
 <p>This method handles the full model construction pipeline:</p>
 <p>1. Download model files from ModelScope/HuggingFace (if not local)</p>
@@ -1381,7 +1381,7 @@
         )
         end_vad = time.time()
 </code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/auto/auto_model.py#L598" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
-<div class="api-detail" id="e8"><span class="dtag badge-m">method</span><h2><code>AutoModel.export(input, **cfg)</code></h2><div class="dmod">funasr.auto.auto_model.AutoModel · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/auto/auto_model.py#L917" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Export model to ONNX format.</p>
+<div class="api-detail" id="e8"><span class="dtag badge-m">method</span><h2><code>AutoModel.export(input, **cfg)</code></h2><div class="dmod">funasr.auto.auto_model.AutoModel · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/auto/auto_model.py#L931" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Export model to ONNX format.</p>
 <p>Creates a deep copy of the model to isolate ONNX operator monkey-patching,</p>
 <p>then runs torch.onnx.export. The original model remains usable after export.</p>
 <h4>Args:</h4>
@@ -1426,7 +1426,7 @@
 
         device = cfg.get(&quot;device&quot;, &quot;cpu&quot;)
         
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/auto/auto_model.py#L917" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/auto/auto_model.py#L931" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
 <div class="api-detail" id="e9"><span class="dtag badge-c">class</span><h2>RegisterTables</h2><div class="dmod">funasr.register.register · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/register.py#L8" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Registry system for classes.</p>
 </div><details class="src-block"><summary>📄 Source code</summary><pre><code>class RegisterTables:
     &quot;&quot;&quot;Registry system for classes.&quot;&quot;&quot;
@@ -5483,7 +5483,7 @@
                 **kwargs: Additional keyword arguments.
             &quot;&quot;&quot;
         super().__init__()
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L367" target="_blank" class="src-more">View full source on GitHub →</a></details><h3 class="mt">Methods</h3><div class="mblk"><code>.ResetDetection(cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L404" target="_blank" class="gh-link">L404</a><div class="mdoc"><p>Resetdetection.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L367" target="_blank" class="src-more">View full source on GitHub →</a></details><h3 class="mt">Methods</h3><div class="mblk"><code>.ResetDetection(cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L406" target="_blank" class="gh-link">L406</a><div class="mdoc"><p>Resetdetection.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>cache</code> — State cache dict for streaming inference.</li>
@@ -5517,7 +5517,7 @@
             ]
             cache[&quot;stats&quot;].decibel = cache[&quot;stats&quot;].decibel[real_drop_frames:]
             cache[&quot;stats&quot;].scores = cache[&quot;stats&quot;].scores[:, real_drop_frames:, :]
-</code></pre></details></div><div class="mblk"><code>.ComputeDecibel(cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L434" target="_blank" class="gh-link">L434</a><div class="mdoc"><p>Computedecibel.</p>
+</code></pre></details></div><div class="mblk"><code>.ComputeDecibel(cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L436" target="_blank" class="gh-link">L436</a><div class="mdoc"><p>Computedecibel.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>cache</code> — State cache dict for streaming inference.</li>
@@ -5551,7 +5551,7 @@
         decibel_numpy = decibel_numpy.tolist()
 
         cache[&quot;stats&quot;].decibel.extend(decibel_numpy)
-</code></pre></details></div><div class="mblk"><code>.ComputeScores(feats, cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L465" target="_blank" class="gh-link">L465</a><div class="mdoc"><p>Computescores.</p>
+</code></pre></details></div><div class="mblk"><code>.ComputeScores(feats, cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L467" target="_blank" class="gh-link">L467</a><div class="mdoc"><p>Computescores.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>feats</code> — Feature tensor (e.g., fbank), shape (batch, frames, dim).</li>
@@ -5576,7 +5576,7 @@
             cache[&quot;stats&quot;].scores = scores  # the first calculation
         else:
             cache[&quot;stats&quot;].scores = torch.cat((cache[&quot;stats&quot;].scores, scores), dim=1)
-</code></pre></details></div><div class="mblk"><code>.PopDataBufTillFrame(frame_idx, cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L485" target="_blank" class="gh-link">L485</a><div class="mdoc"><p>Popdatabuftillframe.</p>
+</code></pre></details></div><div class="mblk"><code>.PopDataBufTillFrame(frame_idx, cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L487" target="_blank" class="gh-link">L487</a><div class="mdoc"><p>Popdatabuftillframe.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>frame_idx</code> — TODO.</li>
@@ -5600,7 +5600,7 @@
                     (cache[&quot;stats&quot;].data_buf_start_frame - cache[&quot;stats&quot;].last_drop_frames)
                     * int(self.vad_opts.frame_in_ms * self.vad_opts.sample_rate / 1000) :
                 ]
-</code></pre></details></div><div class="mblk"><code>.PopDataToOutputBuf(start_frm, frm_cnt, first_frm_is_start_point, last_frm_is_end_point, end_point_is_sent_end, cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L504" target="_blank" class="gh-link">L504</a><div class="mdoc"><p>Popdatatooutputbuf.</p>
+</code></pre></details></div><div class="mblk"><code>.PopDataToOutputBuf(start_frm, frm_cnt, first_frm_is_start_point, last_frm_is_end_point, end_point_is_sent_end, cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L506" target="_blank" class="gh-link">L506</a><div class="mdoc"><p>Popdatatooutputbuf.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>start_frm</code> — TODO.</li>
@@ -5640,7 +5640,7 @@
                 0,
                 int(
                     self.vad_opts.frame_length_ms * self.vad_opts.sample_rate / 1000
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L504" target="_blank" class="src-more">View full source →</a></details></div><div class="mblk"><code>.OnSilenceDetected(valid_frame, cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L574" target="_blank" class="gh-link">L574</a><div class="mdoc"><p>Onsilencedetected.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L506" target="_blank" class="src-more">View full source →</a></details></div><div class="mblk"><code>.OnSilenceDetected(valid_frame, cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L576" target="_blank" class="gh-link">L576</a><div class="mdoc"><p>Onsilencedetected.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>valid_frame</code> — TODO.</li>
@@ -5658,7 +5658,7 @@
         cache[&quot;stats&quot;].lastest_confirmed_silence_frame = valid_frame
         if cache[&quot;stats&quot;].vad_state_machine == VadStateMachine.kVadInStateStartPointNotDetected:
             self.PopDataBufTillFrame(valid_frame, cache=cache)
-</code></pre></details></div><div class="mblk"><code>.OnVoiceDetected(valid_frame, cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L590" target="_blank" class="gh-link">L590</a><div class="mdoc"><p>Onvoicedetected.</p>
+</code></pre></details></div><div class="mblk"><code>.OnVoiceDetected(valid_frame, cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L592" target="_blank" class="gh-link">L592</a><div class="mdoc"><p>Onvoicedetected.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>valid_frame</code> — TODO.</li>
@@ -5675,7 +5675,7 @@
             cache = {}
         cache[&quot;stats&quot;].latest_confirmed_speech_frame = valid_frame
         self.PopDataToOutputBuf(valid_frame, 1, False, False, False, cache=cache)
-</code></pre></details></div><div class="mblk"><code>.OnVoiceStart(start_frame, fake_result, cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L602" target="_blank" class="gh-link">L602</a><div class="mdoc"><p>Onvoicestart.</p>
+</code></pre></details></div><div class="mblk"><code>.OnVoiceStart(start_frame, fake_result, cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L604" target="_blank" class="gh-link">L604</a><div class="mdoc"><p>Onvoicestart.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>start_frame</code> — TODO.</li>
@@ -5706,7 +5706,7 @@
             self.PopDataToOutputBuf(
                 cache[&quot;stats&quot;].confirmed_start_frame, 1, True, False, False, cache=cache
             )
-</code></pre></details></div><div class="mblk"><code>.OnVoiceEnd(end_frame, fake_result, is_last_frame, cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L627" target="_blank" class="gh-link">L627</a><div class="mdoc"><p>Onvoiceend.</p>
+</code></pre></details></div><div class="mblk"><code>.OnVoiceEnd(end_frame, fake_result, is_last_frame, cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L629" target="_blank" class="gh-link">L629</a><div class="mdoc"><p>Onvoiceend.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>end_frame</code> — TODO.</li>
@@ -5741,7 +5741,7 @@
                 cache[&quot;stats&quot;].confirmed_end_frame, 1, False, True, is_last_frame, cache=cache
             )
         cache[&quot;stats&quot;].number_end_time_detected += 1
-</code></pre></details></div><div class="mblk"><code>.MaybeOnVoiceEndIfLastFrame(is_final_frame, cur_frm_idx, cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L655" target="_blank" class="gh-link">L655</a><div class="mdoc"><p>Maybeonvoiceendiflastframe.</p>
+</code></pre></details></div><div class="mblk"><code>.MaybeOnVoiceEndIfLastFrame(is_final_frame, cur_frm_idx, cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L657" target="_blank" class="gh-link">L657</a><div class="mdoc"><p>Maybeonvoiceendiflastframe.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>is_final_frame</code> — Boolean flag for final frame.</li>
@@ -5763,7 +5763,7 @@
         if is_final_frame:
             self.OnVoiceEnd(cur_frm_idx, False, True, cache=cache)
             cache[&quot;stats&quot;].vad_state_machine = VadStateMachine.kVadInStateEndPointDetected
-</code></pre></details></div><div class="mblk"><code>.GetLatency(cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L671" target="_blank" class="gh-link">L671</a><div class="mdoc"><p>Getlatency.</p>
+</code></pre></details></div><div class="mblk"><code>.GetLatency(cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L673" target="_blank" class="gh-link">L673</a><div class="mdoc"><p>Getlatency.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>cache</code> — State cache dict for streaming inference.</li>
@@ -5777,7 +5777,7 @@
         if cache is None:
             cache = {}
         return int(self.LatencyFrmNumAtStartPoint(cache=cache) * self.vad_opts.frame_in_ms)
-</code></pre></details></div><div class="mblk"><code>.LatencyFrmNumAtStartPoint(cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L681" target="_blank" class="gh-link">L681</a><div class="mdoc"><p>Latencyfrmnumatstartpoint.</p>
+</code></pre></details></div><div class="mblk"><code>.LatencyFrmNumAtStartPoint(cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L683" target="_blank" class="gh-link">L683</a><div class="mdoc"><p>Latencyfrmnumatstartpoint.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>cache</code> — State cache dict for streaming inference.</li>
@@ -5794,7 +5794,7 @@
         if self.vad_opts.do_extend:
             vad_latency += int(self.vad_opts.lookback_time_start_point / self.vad_opts.frame_in_ms)
         return vad_latency
-</code></pre></details></div><div class="mblk"><code>.GetFrameState(t, cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L694" target="_blank" class="gh-link">L694</a><div class="mdoc"><p>Getframestate.</p>
+</code></pre></details></div><div class="mblk"><code>.GetFrameState(t, cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L696" target="_blank" class="gh-link">L696</a><div class="mdoc"><p>Getframestate.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>t</code> — TODO.</li>
@@ -5830,7 +5830,7 @@
               and `torch.Tensor` is slower `float` when tensor has only one element.
             - Put the iteration of `sil_pdf_ids` inside `sum()` to reduce the overhead of creating a new list.
             - The default `sil_pdf_ids` is [0], the `if` statement is used to reduce the overhead of expression
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L694" target="_blank" class="src-more">View full source →</a></details></div><div class="mblk"><code>.forward(feats, waveform, cache, is_final, **kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L759" target="_blank" class="gh-link">L759</a><div class="mdoc"><p>Forward pass for training.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L696" target="_blank" class="src-more">View full source →</a></details></div><div class="mblk"><code>.forward(feats, waveform, cache, is_final, **kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L761" target="_blank" class="gh-link">L761</a><div class="mdoc"><p>Forward pass for training.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>feats</code> — Feature tensor (e.g., fbank), shape (batch, frames, dim).</li>
@@ -5869,7 +5869,7 @@
             self.DetectCommonFrames(cache=cache)
         else:
             self.DetectLastFrames(cache=cache)
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L759" target="_blank" class="src-more">View full source →</a></details></div><div class="mblk"><code>.init_cache(cache, **kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L842" target="_blank" class="gh-link">L842</a><div class="mdoc"><p>Init cache.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L761" target="_blank" class="src-more">View full source →</a></details></div><div class="mblk"><code>.init_cache(cache, **kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L844" target="_blank" class="gh-link">L844</a><div class="mdoc"><p>Init cache.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>cache</code> — State cache dict for streaming inference.</li>
@@ -5905,7 +5905,7 @@
             sil_pdf_ids=self.vad_opts.sil_pdf_ids,
             max_end_sil_frame_cnt_thresh=self.vad_opts.max_end_silence_time
             - self.vad_opts.speech_to_sil_time_thres,
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L842" target="_blank" class="src-more">View full source →</a></details></div><div class="mblk"><code>.inference(data_in, data_lengths, key, tokenizer, frontend, cache, **kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L878" target="_blank" class="gh-link">L878</a><div class="mdoc"><p>Run inference on input data.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L844" target="_blank" class="src-more">View full source →</a></details></div><div class="mblk"><code>.inference(data_in, data_lengths, key, tokenizer, frontend, cache, **kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L880" target="_blank" class="gh-link">L880</a><div class="mdoc"><p>Run inference on input data.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>data_in</code> — Input data (audio samples, file paths, or text).</li>
@@ -5946,7 +5946,7 @@
         chunk_size = kwargs.get(&quot;chunk_size&quot;, 60000)  # 50ms
         chunk_stride_samples = int(chunk_size * frontend.fs / 1000)
 
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L878" target="_blank" class="src-more">View full source →</a></details></div><div class="mblk"><code>.export(**kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L1019" target="_blank" class="gh-link">L1019</a><div class="mdoc"><p>Export.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L880" target="_blank" class="src-more">View full source →</a></details></div><div class="mblk"><code>.export(**kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L1021" target="_blank" class="gh-link">L1021</a><div class="mdoc"><p>Export.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>**kwargs</code> — Additional keyword arguments.</li>
@@ -5962,7 +5962,7 @@
 
         models = export_rebuild_model(model=self, **kwargs)
         return models
-</code></pre></details></div><div class="mblk"><code>.DetectCommonFrames(cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L1031" target="_blank" class="gh-link">L1031</a><div class="mdoc"><p>Detectcommonframes.</p>
+</code></pre></details></div><div class="mblk"><code>.DetectCommonFrames(cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L1033" target="_blank" class="gh-link">L1033</a><div class="mdoc"><p>Detectcommonframes.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>cache</code> — State cache dict for streaming inference.</li>
@@ -5985,7 +5985,7 @@
             self.DetectOneFrame(frame_state, cache[&quot;stats&quot;].frm_cnt - 1 - i, False, cache=cache)
 
         return 0
-</code></pre></details></div><div class="mblk"><code>.DetectLastFrames(cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L1050" target="_blank" class="gh-link">L1050</a><div class="mdoc"><p>Detectlastframes.</p>
+</code></pre></details></div><div class="mblk"><code>.DetectLastFrames(cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L1052" target="_blank" class="gh-link">L1052</a><div class="mdoc"><p>Detectlastframes.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>cache</code> — State cache dict for streaming inference.</li>
@@ -6011,7 +6011,7 @@
                 self.DetectOneFrame(frame_state, cache[&quot;stats&quot;].frm_cnt - 1, True, cache=cache)
 
         return 0
-</code></pre></details></div><div class="mblk"><code>.DetectOneFrame(cur_frm_state, cur_frm_idx, is_final_frame, cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L1072" target="_blank" class="gh-link">L1072</a><div class="mdoc"><p>Detectoneframe.</p>
+</code></pre></details></div><div class="mblk"><code>.DetectOneFrame(cur_frm_state, cur_frm_idx, is_final_frame, cache)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L1074" target="_blank" class="gh-link">L1074</a><div class="mdoc"><p>Detectoneframe.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>cur_frm_state</code> — TODO.</li>
@@ -6049,8 +6049,8 @@
             cache[&quot;stats&quot;].continous_silence_frame_count = 0
             cache[&quot;stats&quot;].pre_end_silence_detected = False
             start_frame = 0
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L1072" target="_blank" class="src-more">View full source →</a></details></div></div>
-<div class="api-detail" id="e85"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.ResetDetection(cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L404" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Resetdetection.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L1074" target="_blank" class="src-more">View full source →</a></details></div></div>
+<div class="api-detail" id="e85"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.ResetDetection(cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L406" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Resetdetection.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>cache</code> — State cache dict for streaming inference.</li>
@@ -6085,7 +6085,7 @@
             cache[&quot;stats&quot;].decibel = cache[&quot;stats&quot;].decibel[real_drop_frames:]
             cache[&quot;stats&quot;].scores = cache[&quot;stats&quot;].scores[:, real_drop_frames:, :]
 </code></pre></details></div>
-<div class="api-detail" id="e86"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.ComputeDecibel(cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L434" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Computedecibel.</p>
+<div class="api-detail" id="e86"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.ComputeDecibel(cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L436" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Computedecibel.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>cache</code> — State cache dict for streaming inference.</li>
@@ -6120,7 +6120,7 @@
 
         cache[&quot;stats&quot;].decibel.extend(decibel_numpy)
 </code></pre></details></div>
-<div class="api-detail" id="e87"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.ComputeScores(feats, cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L465" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Computescores.</p>
+<div class="api-detail" id="e87"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.ComputeScores(feats, cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L467" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Computescores.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>feats</code> — Feature tensor (e.g., fbank), shape (batch, frames, dim).</li>
@@ -6146,7 +6146,7 @@
         else:
             cache[&quot;stats&quot;].scores = torch.cat((cache[&quot;stats&quot;].scores, scores), dim=1)
 </code></pre></details></div>
-<div class="api-detail" id="e88"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.PopDataBufTillFrame(frame_idx, cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L485" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Popdatabuftillframe.</p>
+<div class="api-detail" id="e88"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.PopDataBufTillFrame(frame_idx, cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L487" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Popdatabuftillframe.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>frame_idx</code> — TODO.</li>
@@ -6171,7 +6171,7 @@
                     * int(self.vad_opts.frame_in_ms * self.vad_opts.sample_rate / 1000) :
                 ]
 </code></pre></details></div>
-<div class="api-detail" id="e89"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.PopDataToOutputBuf(start_frm, frm_cnt, first_frm_is_start_point, last_frm_is_end_point, end_point_is_sent_end, cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L504" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Popdatatooutputbuf.</p>
+<div class="api-detail" id="e89"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.PopDataToOutputBuf(start_frm, frm_cnt, first_frm_is_start_point, last_frm_is_end_point, end_point_is_sent_end, cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L506" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Popdatatooutputbuf.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>start_frm</code> — TODO.</li>
@@ -6211,8 +6211,8 @@
                 0,
                 int(
                     self.vad_opts.frame_length_ms * self.vad_opts.sample_rate / 1000
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L504" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
-<div class="api-detail" id="e90"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.OnSilenceDetected(valid_frame, cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L574" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Onsilencedetected.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L506" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
+<div class="api-detail" id="e90"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.OnSilenceDetected(valid_frame, cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L576" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Onsilencedetected.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>valid_frame</code> — TODO.</li>
@@ -6231,7 +6231,7 @@
         if cache[&quot;stats&quot;].vad_state_machine == VadStateMachine.kVadInStateStartPointNotDetected:
             self.PopDataBufTillFrame(valid_frame, cache=cache)
 </code></pre></details></div>
-<div class="api-detail" id="e91"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.OnVoiceDetected(valid_frame, cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L590" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Onvoicedetected.</p>
+<div class="api-detail" id="e91"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.OnVoiceDetected(valid_frame, cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L592" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Onvoicedetected.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>valid_frame</code> — TODO.</li>
@@ -6249,7 +6249,7 @@
         cache[&quot;stats&quot;].latest_confirmed_speech_frame = valid_frame
         self.PopDataToOutputBuf(valid_frame, 1, False, False, False, cache=cache)
 </code></pre></details></div>
-<div class="api-detail" id="e92"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.OnVoiceStart(start_frame, fake_result, cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L602" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Onvoicestart.</p>
+<div class="api-detail" id="e92"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.OnVoiceStart(start_frame, fake_result, cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L604" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Onvoicestart.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>start_frame</code> — TODO.</li>
@@ -6281,7 +6281,7 @@
                 cache[&quot;stats&quot;].confirmed_start_frame, 1, True, False, False, cache=cache
             )
 </code></pre></details></div>
-<div class="api-detail" id="e93"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.OnVoiceEnd(end_frame, fake_result, is_last_frame, cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L627" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Onvoiceend.</p>
+<div class="api-detail" id="e93"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.OnVoiceEnd(end_frame, fake_result, is_last_frame, cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L629" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Onvoiceend.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>end_frame</code> — TODO.</li>
@@ -6317,7 +6317,7 @@
             )
         cache[&quot;stats&quot;].number_end_time_detected += 1
 </code></pre></details></div>
-<div class="api-detail" id="e94"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.MaybeOnVoiceEndIfLastFrame(is_final_frame, cur_frm_idx, cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L655" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Maybeonvoiceendiflastframe.</p>
+<div class="api-detail" id="e94"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.MaybeOnVoiceEndIfLastFrame(is_final_frame, cur_frm_idx, cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L657" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Maybeonvoiceendiflastframe.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>is_final_frame</code> — Boolean flag for final frame.</li>
@@ -6340,7 +6340,7 @@
             self.OnVoiceEnd(cur_frm_idx, False, True, cache=cache)
             cache[&quot;stats&quot;].vad_state_machine = VadStateMachine.kVadInStateEndPointDetected
 </code></pre></details></div>
-<div class="api-detail" id="e95"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.GetLatency(cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L671" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Getlatency.</p>
+<div class="api-detail" id="e95"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.GetLatency(cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L673" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Getlatency.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>cache</code> — State cache dict for streaming inference.</li>
@@ -6355,7 +6355,7 @@
             cache = {}
         return int(self.LatencyFrmNumAtStartPoint(cache=cache) * self.vad_opts.frame_in_ms)
 </code></pre></details></div>
-<div class="api-detail" id="e96"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.LatencyFrmNumAtStartPoint(cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L681" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Latencyfrmnumatstartpoint.</p>
+<div class="api-detail" id="e96"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.LatencyFrmNumAtStartPoint(cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L683" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Latencyfrmnumatstartpoint.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>cache</code> — State cache dict for streaming inference.</li>
@@ -6373,7 +6373,7 @@
             vad_latency += int(self.vad_opts.lookback_time_start_point / self.vad_opts.frame_in_ms)
         return vad_latency
 </code></pre></details></div>
-<div class="api-detail" id="e97"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.GetFrameState(t, cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L694" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Getframestate.</p>
+<div class="api-detail" id="e97"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.GetFrameState(t, cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L696" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Getframestate.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>t</code> — TODO.</li>
@@ -6409,8 +6409,8 @@
               and `torch.Tensor` is slower `float` when tensor has only one element.
             - Put the iteration of `sil_pdf_ids` inside `sum()` to reduce the overhead of creating a new list.
             - The default `sil_pdf_ids` is [0], the `if` statement is used to reduce the overhead of expression
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L694" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
-<div class="api-detail" id="e98"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.forward(feats, waveform, cache, is_final, **kwargs)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L759" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Forward pass for training.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L696" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
+<div class="api-detail" id="e98"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.forward(feats, waveform, cache, is_final, **kwargs)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L761" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Forward pass for training.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>feats</code> — Feature tensor (e.g., fbank), shape (batch, frames, dim).</li>
@@ -6449,8 +6449,8 @@
             self.DetectCommonFrames(cache=cache)
         else:
             self.DetectLastFrames(cache=cache)
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L759" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
-<div class="api-detail" id="e99"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.init_cache(cache, **kwargs)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L842" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Init cache.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L761" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
+<div class="api-detail" id="e99"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.init_cache(cache, **kwargs)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L844" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Init cache.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>cache</code> — State cache dict for streaming inference.</li>
@@ -6486,8 +6486,8 @@
             sil_pdf_ids=self.vad_opts.sil_pdf_ids,
             max_end_sil_frame_cnt_thresh=self.vad_opts.max_end_silence_time
             - self.vad_opts.speech_to_sil_time_thres,
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L842" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
-<div class="api-detail" id="e100"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.inference(data_in, data_lengths, key, tokenizer, frontend, cache, **kwargs)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L878" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Run inference on input data.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L844" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
+<div class="api-detail" id="e100"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.inference(data_in, data_lengths, key, tokenizer, frontend, cache, **kwargs)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L880" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Run inference on input data.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>data_in</code> — Input data (audio samples, file paths, or text).</li>
@@ -6528,8 +6528,8 @@
         chunk_size = kwargs.get(&quot;chunk_size&quot;, 60000)  # 50ms
         chunk_stride_samples = int(chunk_size * frontend.fs / 1000)
 
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L878" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
-<div class="api-detail" id="e101"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.export(**kwargs)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L1019" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Export.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L880" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
+<div class="api-detail" id="e101"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.export(**kwargs)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L1021" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Export.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>**kwargs</code> — Additional keyword arguments.</li>
@@ -6546,7 +6546,7 @@
         models = export_rebuild_model(model=self, **kwargs)
         return models
 </code></pre></details></div>
-<div class="api-detail" id="e102"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.DetectCommonFrames(cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L1031" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Detectcommonframes.</p>
+<div class="api-detail" id="e102"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.DetectCommonFrames(cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L1033" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Detectcommonframes.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>cache</code> — State cache dict for streaming inference.</li>
@@ -6570,7 +6570,7 @@
 
         return 0
 </code></pre></details></div>
-<div class="api-detail" id="e103"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.DetectLastFrames(cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L1050" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Detectlastframes.</p>
+<div class="api-detail" id="e103"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.DetectLastFrames(cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L1052" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Detectlastframes.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>cache</code> — State cache dict for streaming inference.</li>
@@ -6597,7 +6597,7 @@
 
         return 0
 </code></pre></details></div>
-<div class="api-detail" id="e104"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.DetectOneFrame(cur_frm_state, cur_frm_idx, is_final_frame, cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L1072" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Detectoneframe.</p>
+<div class="api-detail" id="e104"><span class="dtag badge-m">method</span><h2><code>FsmnVADStreaming.DetectOneFrame(cur_frm_state, cur_frm_idx, is_final_frame, cache)</code></h2><div class="dmod">funasr.models.fsmn_vad_streaming.FsmnVADStreaming · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L1074" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Detectoneframe.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>cur_frm_state</code> — TODO.</li>
@@ -6635,8 +6635,8 @@
             cache[&quot;stats&quot;].continous_silence_frame_count = 0
             cache[&quot;stats&quot;].pre_end_silence_detected = False
             start_frame = 0
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L1072" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
-<div class="api-detail" id="e105"><span class="dtag badge-c">class</span><h2>FunASRNano</h2><div class="dmod">funasr.models.fun_asr_nano · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L27" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><ul>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fsmn_vad_streaming/model.py#L1074" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
+<div class="api-detail" id="e105"><span class="dtag badge-c">class</span><h2>FunASRNano</h2><div class="dmod">funasr.models.fun_asr_nano · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L31" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><ul>
 <li><code>Fun</code> — ASR-Nano: End-to-End ASR Large Model.</li>
 </ul>
 <p>Trained on tens of millions of hours of real speech data.</p>
@@ -6683,7 +6683,7 @@
         llm: str = None,
         llm_conf: dict = None,
         input_size: int = 80,
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L27" target="_blank" class="src-more">View full source on GitHub →</a></details><h3 class="mt">Methods</h3><div class="mblk"><code>.forward(speech, speech_lengths, input_ids, attention_mask, labels_ids, fbank_beg, fbank_mask, **kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L194" target="_blank" class="gh-link">L194</a><div class="mdoc"><p>Forward pass for training.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L31" target="_blank" class="src-more">View full source on GitHub →</a></details><h3 class="mt">Methods</h3><div class="mblk"><code>.forward(speech, speech_lengths, input_ids, attention_mask, labels_ids, fbank_beg, fbank_mask, **kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L198" target="_blank" class="gh-link">L198</a><div class="mdoc"><p>Forward pass for training.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>speech</code> — Speech audio tensor, shape (batch, time).</li>
@@ -6725,7 +6725,7 @@
         if speech is not None:
             if len(speech_lengths.size()) &gt; 1:
                 speech_lengths = speech_lengths[:, 0]
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L194" target="_blank" class="src-more">View full source →</a></details></div><div class="mblk"><code>.forward_export(speech, speech_lengths, **kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L317" target="_blank" class="gh-link">L317</a><div class="mdoc"><p>Forward export.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L198" target="_blank" class="src-more">View full source →</a></details></div><div class="mblk"><code>.forward_export(speech, speech_lengths, **kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L321" target="_blank" class="gh-link">L321</a><div class="mdoc"><p>Forward export.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>speech</code> — Speech audio tensor, shape (batch, time).</li>
@@ -6743,7 +6743,7 @@
         x, olens = self.audio_encoder(speech, speech_lengths)
         encoder_out, encoder_out_lens = self.audio_adaptor(x, olens)
         return encoder_out, encoder_out_lens
-</code></pre></details></div><div class="mblk"><code>.encode(speech, speech_lengths)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L329" target="_blank" class="gh-link">L329</a><div class="mdoc"><p>Encode.</p>
+</code></pre></details></div><div class="mblk"><code>.encode(speech, speech_lengths)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L333" target="_blank" class="gh-link">L333</a><div class="mdoc"><p>Encode.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>speech</code> — Speech audio tensor, shape (batch, time).</li>
@@ -6760,7 +6760,7 @@
         encoder_out, encoder_out_lens = self.audio_encoder(speech, speech_lengths)
 
         return encoder_out, encoder_out_lens
-</code></pre></details></div><div class="mblk"><code>.data_template(data)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L341" target="_blank" class="gh-link">L341</a><div class="mdoc"><p>Data template.</p>
+</code></pre></details></div><div class="mblk"><code>.data_template(data)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L345" target="_blank" class="gh-link">L345</a><div class="mdoc"><p>Data template.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>data</code> — TODO.</li>
@@ -6794,7 +6794,7 @@
         }
 
         return contents
-</code></pre></details></div><div class="mblk"><code>.data_load_speech(contents, tokenizer, frontend, meta_data, **kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L371" target="_blank" class="gh-link">L371</a><div class="mdoc"><p>Data load speech.</p>
+</code></pre></details></div><div class="mblk"><code>.data_load_speech(contents, tokenizer, frontend, meta_data, **kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L375" target="_blank" class="gh-link">L375</a><div class="mdoc"><p>Data load speech.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>contents</code> — TODO.</li>
@@ -6833,7 +6833,7 @@
             [],
         )
         input_source_ids = []
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L371" target="_blank" class="src-more">View full source →</a></details></div><div class="mblk"><code>.inference_prepare(data_in, data_lengths, key, tokenizer, frontend, **kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L533" target="_blank" class="gh-link">L533</a><div class="mdoc"><p>Inference prepare.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L375" target="_blank" class="src-more">View full source →</a></details></div><div class="mblk"><code>.inference_prepare(data_in, data_lengths, key, tokenizer, frontend, **kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L537" target="_blank" class="gh-link">L537</a><div class="mdoc"><p>Inference prepare.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>data_in</code> — Input data (audio samples, file paths, or text).</li>
@@ -6873,7 +6873,7 @@
 
         # audio encoder
         speech = batch[&quot;speech&quot;]
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L533" target="_blank" class="src-more">View full source →</a></details></div><div class="mblk"><code>.get_prompt(hotwords, language, itn)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L632" target="_blank" class="gh-link">L632</a><div class="mdoc"><p>Get prompt.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L537" target="_blank" class="src-more">View full source →</a></details></div><div class="mblk"><code>.get_prompt(hotwords, language, itn)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L636" target="_blank" class="gh-link">L636</a><div class="mdoc"><p>Get prompt.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>hotwords</code> — TODO.</li>
@@ -6901,7 +6901,7 @@
         if not itn:
             prompt += &quot;，不进行文本规整&quot;
         return prompt + &quot;：&quot;
-</code></pre></details></div><div class="mblk"><code>.generate_chatml(prompt, data)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L654" target="_blank" class="gh-link">L654</a><div class="mdoc"><p>Generate chatml.</p>
+</code></pre></details></div><div class="mblk"><code>.generate_chatml(prompt, data)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L658" target="_blank" class="gh-link">L658</a><div class="mdoc"><p>Generate chatml.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>prompt</code> — TODO.</li>
@@ -6930,7 +6930,7 @@
                 },
                 {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;null&quot;},
             ]
-</code></pre></details></div><div class="mblk"><code>.inference(data_in, data_lengths, key, tokenizer, frontend, **kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L678" target="_blank" class="gh-link">L678</a><div class="mdoc"><p>Run inference on input data.</p>
+</code></pre></details></div><div class="mblk"><code>.inference(data_in, data_lengths, key, tokenizer, frontend, **kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L682" target="_blank" class="gh-link">L682</a><div class="mdoc"><p>Run inference on input data.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>data_in</code> — Input data (audio samples, file paths, or text).</li>
@@ -6970,7 +6970,7 @@
                 chars = string.ascii_letters + string.digits
                 key.append(&quot;rand_key_&quot; + &quot;&quot;.join(random.choice(chars) for _ in range(13)))
 
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L678" target="_blank" class="src-more">View full source →</a></details></div><div class="mblk"><code>.inference_llm(data_in, data_lengths, key, tokenizer, frontend, **kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L717" target="_blank" class="gh-link">L717</a><div class="mdoc"><p>Inference llm.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L682" target="_blank" class="src-more">View full source →</a></details></div><div class="mblk"><code>.inference_llm(data_in, data_lengths, key, tokenizer, frontend, **kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L721" target="_blank" class="gh-link">L721</a><div class="mdoc"><p>Inference llm.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>data_in</code> — Input data (audio samples, file paths, or text).</li>
@@ -7010,7 +7010,7 @@
             decoder_out, decoder_out_lens = self.ctc_decoder(encoder_out, encoder_out_lens)
             ctc_logits = self.ctc.log_softmax(decoder_out)
 
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L717" target="_blank" class="src-more">View full source →</a></details></div><div class="mblk"><code>.from_pretrained(model, **kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L856" target="_blank" class="gh-link">L856</a><div class="mdoc"><p>From pretrained.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L721" target="_blank" class="src-more">View full source →</a></details></div><div class="mblk"><code>.from_pretrained(model, **kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L860" target="_blank" class="gh-link">L860</a><div class="mdoc"><p>From pretrained.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>model</code> — Model instance or model name.</li>
@@ -7029,7 +7029,7 @@
 
         return model, kwargs
 </code></pre></details></div></div>
-<div class="api-detail" id="e106"><span class="dtag badge-m">method</span><h2><code>FunASRNano.forward(speech, speech_lengths, input_ids, attention_mask, labels_ids, fbank_beg, fbank_mask, **kwargs)</code></h2><div class="dmod">funasr.models.fun_asr_nano.FunASRNano · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L194" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Forward pass for training.</p>
+<div class="api-detail" id="e106"><span class="dtag badge-m">method</span><h2><code>FunASRNano.forward(speech, speech_lengths, input_ids, attention_mask, labels_ids, fbank_beg, fbank_mask, **kwargs)</code></h2><div class="dmod">funasr.models.fun_asr_nano.FunASRNano · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L198" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Forward pass for training.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>speech</code> — Speech audio tensor, shape (batch, time).</li>
@@ -7071,8 +7071,8 @@
         if speech is not None:
             if len(speech_lengths.size()) &gt; 1:
                 speech_lengths = speech_lengths[:, 0]
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L194" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
-<div class="api-detail" id="e107"><span class="dtag badge-m">method</span><h2><code>FunASRNano.forward_export(speech, speech_lengths, **kwargs)</code></h2><div class="dmod">funasr.models.fun_asr_nano.FunASRNano · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L317" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Forward export.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L198" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
+<div class="api-detail" id="e107"><span class="dtag badge-m">method</span><h2><code>FunASRNano.forward_export(speech, speech_lengths, **kwargs)</code></h2><div class="dmod">funasr.models.fun_asr_nano.FunASRNano · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L321" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Forward export.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>speech</code> — Speech audio tensor, shape (batch, time).</li>
@@ -7091,7 +7091,7 @@
         encoder_out, encoder_out_lens = self.audio_adaptor(x, olens)
         return encoder_out, encoder_out_lens
 </code></pre></details></div>
-<div class="api-detail" id="e108"><span class="dtag badge-m">method</span><h2><code>FunASRNano.encode(speech, speech_lengths)</code></h2><div class="dmod">funasr.models.fun_asr_nano.FunASRNano · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L329" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Encode.</p>
+<div class="api-detail" id="e108"><span class="dtag badge-m">method</span><h2><code>FunASRNano.encode(speech, speech_lengths)</code></h2><div class="dmod">funasr.models.fun_asr_nano.FunASRNano · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L333" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Encode.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>speech</code> — Speech audio tensor, shape (batch, time).</li>
@@ -7109,7 +7109,7 @@
 
         return encoder_out, encoder_out_lens
 </code></pre></details></div>
-<div class="api-detail" id="e109"><span class="dtag badge-m">method</span><h2><code>FunASRNano.data_template(data)</code></h2><div class="dmod">funasr.models.fun_asr_nano.FunASRNano · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L341" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Data template.</p>
+<div class="api-detail" id="e109"><span class="dtag badge-m">method</span><h2><code>FunASRNano.data_template(data)</code></h2><div class="dmod">funasr.models.fun_asr_nano.FunASRNano · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L345" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Data template.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>data</code> — TODO.</li>
@@ -7144,7 +7144,7 @@
 
         return contents
 </code></pre></details></div>
-<div class="api-detail" id="e110"><span class="dtag badge-m">method</span><h2><code>FunASRNano.data_load_speech(contents, tokenizer, frontend, meta_data, **kwargs)</code></h2><div class="dmod">funasr.models.fun_asr_nano.FunASRNano · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L371" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Data load speech.</p>
+<div class="api-detail" id="e110"><span class="dtag badge-m">method</span><h2><code>FunASRNano.data_load_speech(contents, tokenizer, frontend, meta_data, **kwargs)</code></h2><div class="dmod">funasr.models.fun_asr_nano.FunASRNano · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L375" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Data load speech.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>contents</code> — TODO.</li>
@@ -7183,8 +7183,8 @@
             [],
         )
         input_source_ids = []
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L371" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
-<div class="api-detail" id="e111"><span class="dtag badge-m">method</span><h2><code>FunASRNano.inference_prepare(data_in, data_lengths, key, tokenizer, frontend, **kwargs)</code></h2><div class="dmod">funasr.models.fun_asr_nano.FunASRNano · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L533" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Inference prepare.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L375" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
+<div class="api-detail" id="e111"><span class="dtag badge-m">method</span><h2><code>FunASRNano.inference_prepare(data_in, data_lengths, key, tokenizer, frontend, **kwargs)</code></h2><div class="dmod">funasr.models.fun_asr_nano.FunASRNano · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L537" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Inference prepare.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>data_in</code> — Input data (audio samples, file paths, or text).</li>
@@ -7224,8 +7224,8 @@
 
         # audio encoder
         speech = batch[&quot;speech&quot;]
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L533" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
-<div class="api-detail" id="e112"><span class="dtag badge-m">method</span><h2><code>FunASRNano.get_prompt(hotwords, language, itn)</code></h2><div class="dmod">funasr.models.fun_asr_nano.FunASRNano · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L632" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Get prompt.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L537" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
+<div class="api-detail" id="e112"><span class="dtag badge-m">method</span><h2><code>FunASRNano.get_prompt(hotwords, language, itn)</code></h2><div class="dmod">funasr.models.fun_asr_nano.FunASRNano · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L636" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Get prompt.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>hotwords</code> — TODO.</li>
@@ -7254,7 +7254,7 @@
             prompt += &quot;，不进行文本规整&quot;
         return prompt + &quot;：&quot;
 </code></pre></details></div>
-<div class="api-detail" id="e113"><span class="dtag badge-m">method</span><h2><code>FunASRNano.generate_chatml(prompt, data)</code></h2><div class="dmod">funasr.models.fun_asr_nano.FunASRNano · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L654" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Generate chatml.</p>
+<div class="api-detail" id="e113"><span class="dtag badge-m">method</span><h2><code>FunASRNano.generate_chatml(prompt, data)</code></h2><div class="dmod">funasr.models.fun_asr_nano.FunASRNano · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L658" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Generate chatml.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>prompt</code> — TODO.</li>
@@ -7284,7 +7284,7 @@
                 {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;null&quot;},
             ]
 </code></pre></details></div>
-<div class="api-detail" id="e114"><span class="dtag badge-m">method</span><h2><code>FunASRNano.inference(data_in, data_lengths, key, tokenizer, frontend, **kwargs)</code></h2><div class="dmod">funasr.models.fun_asr_nano.FunASRNano · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L678" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Run inference on input data.</p>
+<div class="api-detail" id="e114"><span class="dtag badge-m">method</span><h2><code>FunASRNano.inference(data_in, data_lengths, key, tokenizer, frontend, **kwargs)</code></h2><div class="dmod">funasr.models.fun_asr_nano.FunASRNano · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L682" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Run inference on input data.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>data_in</code> — Input data (audio samples, file paths, or text).</li>
@@ -7324,8 +7324,8 @@
                 chars = string.ascii_letters + string.digits
                 key.append(&quot;rand_key_&quot; + &quot;&quot;.join(random.choice(chars) for _ in range(13)))
 
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L678" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
-<div class="api-detail" id="e115"><span class="dtag badge-m">method</span><h2><code>FunASRNano.inference_llm(data_in, data_lengths, key, tokenizer, frontend, **kwargs)</code></h2><div class="dmod">funasr.models.fun_asr_nano.FunASRNano · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L717" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Inference llm.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L682" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
+<div class="api-detail" id="e115"><span class="dtag badge-m">method</span><h2><code>FunASRNano.inference_llm(data_in, data_lengths, key, tokenizer, frontend, **kwargs)</code></h2><div class="dmod">funasr.models.fun_asr_nano.FunASRNano · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L721" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Inference llm.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>data_in</code> — Input data (audio samples, file paths, or text).</li>
@@ -7365,8 +7365,8 @@
             decoder_out, decoder_out_lens = self.ctc_decoder(encoder_out, encoder_out_lens)
             ctc_logits = self.ctc.log_softmax(decoder_out)
 
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L717" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
-<div class="api-detail" id="e116"><span class="dtag badge-m">method</span><h2><code>FunASRNano.from_pretrained(model, **kwargs)</code></h2><div class="dmod">funasr.models.fun_asr_nano.FunASRNano · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L856" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>From pretrained.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L721" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
+<div class="api-detail" id="e116"><span class="dtag badge-m">method</span><h2><code>FunASRNano.from_pretrained(model, **kwargs)</code></h2><div class="dmod">funasr.models.fun_asr_nano.FunASRNano · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/fun_asr_nano/model.py#L860" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>From pretrained.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>model</code> — Model instance or model name.</li>
@@ -16175,13 +16175,47 @@
             model = whisper.model.Whisper(dims=dims)
 
         self.model = model
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/whisper/model.py#L33" target="_blank" class="src-more">View full source on GitHub →</a></details><h3 class="mt">Methods</h3><div class="mblk"><code>.forward()</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/whisper/model.py#L66" target="_blank" class="gh-link">L66</a><div class="mdoc"><p>Forward pass for training.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/whisper/model.py#L33" target="_blank" class="src-more">View full source on GitHub →</a></details><h3 class="mt">Methods</h3><div class="mblk"><code>.forward(speech, speech_lengths, text, text_lengths, **kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/whisper/model.py#L66" target="_blank" class="gh-link">L66</a><div class="mdoc"><p>Forward pass for training. Computes cross-entropy loss.</p>
+<h4>Args:</h4>
+<ul>
+<li><code>speech</code> — (B, T, D) mel-spectrogram features</li>
+<li><code>speech_lengths</code> — (B,) lengths of each audio</li>
+<li><code>text</code> — (B, U) token IDs (with SOT/EOT tokens)</li>
+<li><code>text_lengths</code> — (B,) lengths of each text sequence</li>
+</ul>
+<h4>Returns:</h4>
+<p>dict with &quot;loss&quot; and optionally &quot;stats&quot;</p>
 </div><details class="src-block"><summary>📄 Source</summary><pre><code>    def forward(
         self,
+        speech: torch.Tensor = None,
+        speech_lengths: torch.Tensor = None,
+        text: torch.Tensor = None,
+        text_lengths: torch.Tensor = None,
+        **kwargs,
     ):
-        &quot;&quot;&quot;Forward pass for training.&quot;&quot;&quot;
-        pass
-</code></pre></details></div><div class="mblk"><code>.inference(data_in, data_lengths, key, tokenizer, frontend, **kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/whisper/model.py#L72" target="_blank" class="gh-link">L72</a><div class="mdoc"><p>Run inference on input data.</p>
+        &quot;&quot;&quot;Forward pass for training. Computes cross-entropy loss.
+
+        Args:
+            speech: (B, T, D) mel-spectrogram features
+            speech_lengths: (B,) lengths of each audio
+            text: (B, U) token IDs (with SOT/EOT tokens)
+            text_lengths: (B,) lengths of each text sequence
+        Returns:
+            dict with &quot;loss&quot; and optionally &quot;stats&quot;
+        &quot;&quot;&quot;
+        if speech is None or text is None:
+            raise ValueError(&quot;forward() requires speech and text for training&quot;)
+
+        # Encoder
+        audio_features = self.model.encoder(speech)
+
+        # Decoder: shift text right for teacher forcing
+        # text format: [SOT, lang, task, ..., tokens, EOT]
+        decoder_input = text[:, :-1]
+        decoder_target = text[:, 1:]
+
+        # Decoder forward
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/whisper/model.py#L66" target="_blank" class="src-more">View full source →</a></details></div><div class="mblk"><code>.inference(data_in, data_lengths, key, tokenizer, frontend, **kwargs)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/whisper/model.py#L111" target="_blank" class="gh-link">L111</a><div class="mdoc"><p>Run inference on input data.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>data_in</code> — Input data (audio samples, file paths, or text).</li>
@@ -16221,15 +16255,49 @@
             self.frontend = frontend
         else:
             frontend = frontend if frontend is not None else self.frontend
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/whisper/model.py#L72" target="_blank" class="src-more">View full source →</a></details></div></div>
-<div class="api-detail" id="e260"><span class="dtag badge-m">method</span><h2><code>WhisperWarp.forward()</code></h2><div class="dmod">funasr.models.whisper.WhisperWarp · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/whisper/model.py#L66" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Forward pass for training.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/whisper/model.py#L111" target="_blank" class="src-more">View full source →</a></details></div></div>
+<div class="api-detail" id="e260"><span class="dtag badge-m">method</span><h2><code>WhisperWarp.forward(speech, speech_lengths, text, text_lengths, **kwargs)</code></h2><div class="dmod">funasr.models.whisper.WhisperWarp · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/whisper/model.py#L66" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Forward pass for training. Computes cross-entropy loss.</p>
+<h4>Args:</h4>
+<ul>
+<li><code>speech</code> — (B, T, D) mel-spectrogram features</li>
+<li><code>speech_lengths</code> — (B,) lengths of each audio</li>
+<li><code>text</code> — (B, U) token IDs (with SOT/EOT tokens)</li>
+<li><code>text_lengths</code> — (B,) lengths of each text sequence</li>
+</ul>
+<h4>Returns:</h4>
+<p>dict with &quot;loss&quot; and optionally &quot;stats&quot;</p>
 </div><details class="src-block"><summary>📄 Source code</summary><pre><code>    def forward(
         self,
+        speech: torch.Tensor = None,
+        speech_lengths: torch.Tensor = None,
+        text: torch.Tensor = None,
+        text_lengths: torch.Tensor = None,
+        **kwargs,
     ):
-        &quot;&quot;&quot;Forward pass for training.&quot;&quot;&quot;
-        pass
-</code></pre></details></div>
-<div class="api-detail" id="e261"><span class="dtag badge-m">method</span><h2><code>WhisperWarp.inference(data_in, data_lengths, key, tokenizer, frontend, **kwargs)</code></h2><div class="dmod">funasr.models.whisper.WhisperWarp · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/whisper/model.py#L72" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Run inference on input data.</p>
+        &quot;&quot;&quot;Forward pass for training. Computes cross-entropy loss.
+
+        Args:
+            speech: (B, T, D) mel-spectrogram features
+            speech_lengths: (B,) lengths of each audio
+            text: (B, U) token IDs (with SOT/EOT tokens)
+            text_lengths: (B,) lengths of each text sequence
+        Returns:
+            dict with &quot;loss&quot; and optionally &quot;stats&quot;
+        &quot;&quot;&quot;
+        if speech is None or text is None:
+            raise ValueError(&quot;forward() requires speech and text for training&quot;)
+
+        # Encoder
+        audio_features = self.model.encoder(speech)
+
+        # Decoder: shift text right for teacher forcing
+        # text format: [SOT, lang, task, ..., tokens, EOT]
+        decoder_input = text[:, :-1]
+        decoder_target = text[:, 1:]
+
+        # Decoder forward
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/whisper/model.py#L66" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
+<div class="api-detail" id="e261"><span class="dtag badge-m">method</span><h2><code>WhisperWarp.inference(data_in, data_lengths, key, tokenizer, frontend, **kwargs)</code></h2><div class="dmod">funasr.models.whisper.WhisperWarp · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/whisper/model.py#L111" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Run inference on input data.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>data_in</code> — Input data (audio samples, file paths, or text).</li>
@@ -16269,7 +16337,7 @@
             self.frontend = frontend
         else:
             frontend = frontend if frontend is not None else self.frontend
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/whisper/model.py#L72" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/whisper/model.py#L111" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
 <div class="api-detail" id="e262"><span class="dtag badge-c">class</span><h2>OpenAIWhisperModel</h2><div class="dmod">funasr.models.whisper_lid · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/models/whisper_lid/model.py#L22" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><ul>
 <li><code>Whisper</code> — LID: Language Identification using OpenAI Whisper encoder.</li>
 </ul>
@@ -17311,7 +17379,7 @@
                 input_feats_proj = self.feats_proj[i]
                 bs, nf, dim = input_feats_proj.shape
 </code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/frontends/fused.py#L110" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
-<div class="api-detail" id="e284"><span class="dtag badge-f">function</span><h2><code>base_s3prl_setup(args)</code></h2><div class="dmod">funasr.frontends.s3prl · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/frontends/s3prl.py#L17" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Base s3prl setup.</p>
+<div class="api-detail" id="e284"><span class="dtag badge-f">function</span><h2><code>base_s3prl_setup(args)</code></h2><div class="dmod">funasr.frontends.s3prl · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/frontends/s3prl.py#L20" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Base s3prl setup.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>args</code> — TODO.</li>
@@ -17331,7 +17399,7 @@
     args.tile_factor = getattr(args, &quot;tile_factor&quot;, 1)
     return args
 </code></pre></details></div>
-<div class="api-detail" id="e285"><span class="dtag badge-c">class</span><h2>S3prlFrontend</h2><div class="dmod">funasr.frontends.s3prl · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/frontends/s3prl.py#L33" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Speech Pretrained Representation frontend structure for ASR.</p>
+<div class="api-detail" id="e285"><span class="dtag badge-c">class</span><h2>S3prlFrontend</h2><div class="dmod">funasr.frontends.s3prl · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/frontends/s3prl.py#L36" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Speech Pretrained Representation frontend structure for ASR.</p>
 </div><details class="src-block"><summary>📄 Source code</summary><pre><code>class S3prlFrontend(nn.Module):
     &quot;&quot;&quot;Speech Pretrained Representation frontend structure for ASR.&quot;&quot;&quot;
 
@@ -17352,21 +17420,21 @@
             &quot;&quot;&quot;
         super().__init__()
         if isinstance(fs, str):
-            fs = humanfriendly.parse_size(fs)
+            if humanfriendly is not None:
+                fs = humanfriendly.parse_size(fs)
+            else:
+                fs = int(fs)
 
         if download_dir is not None:
             torch.hub.set_dir(download_dir)
 
         self.multilayer_feature = multilayer_feature
         self.upstream, self.featurizer = self._get_upstream(frontend_conf)
-        self.pretrained_params = copy.deepcopy(self.upstream.state_dict())
-        self.output_dim = self.featurizer.output_dim
-        self.frontend_type = &quot;s3prl&quot;
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/frontends/s3prl.py#L33" target="_blank" class="src-more">View full source on GitHub →</a></details><h3 class="mt">Methods</h3><div class="mblk"><code>.output_size()</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/frontends/s3prl.py#L127" target="_blank" class="gh-link">L127</a><div class="mdoc"><p>Output size.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/frontends/s3prl.py#L36" target="_blank" class="src-more">View full source on GitHub →</a></details><h3 class="mt">Methods</h3><div class="mblk"><code>.output_size()</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/frontends/s3prl.py#L133" target="_blank" class="gh-link">L133</a><div class="mdoc"><p>Output size.</p>
 </div><details class="src-block"><summary>📄 Source</summary><pre><code>    def output_size(self) -&gt; int:
         &quot;&quot;&quot;Output size.&quot;&quot;&quot;
         return self.output_dim
-</code></pre></details></div><div class="mblk"><code>.forward(input, input_lengths)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/frontends/s3prl.py#L131" target="_blank" class="gh-link">L131</a><div class="mdoc"><p>Forward pass for training.</p>
+</code></pre></details></div><div class="mblk"><code>.forward(input, input_lengths)</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/frontends/s3prl.py#L137" target="_blank" class="gh-link">L137</a><div class="mdoc"><p>Forward pass for training.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>input</code> — Input audio/text data.</li>
@@ -17397,18 +17465,18 @@
         del feats
 
         return input_feats, feats_lens
-</code></pre></details></div><div class="mblk"><code>.reload_pretrained_parameters()</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/frontends/s3prl.py#L157" target="_blank" class="gh-link">L157</a><div class="mdoc"><p>Reload pretrained parameters.</p>
+</code></pre></details></div><div class="mblk"><code>.reload_pretrained_parameters()</code> <a href="https://github.com/modelscope/FunASR/blob/main/funasr/frontends/s3prl.py#L163" target="_blank" class="gh-link">L163</a><div class="mdoc"><p>Reload pretrained parameters.</p>
 </div><details class="src-block"><summary>📄 Source</summary><pre><code>    def reload_pretrained_parameters(self):
         &quot;&quot;&quot;Reload pretrained parameters.&quot;&quot;&quot;
         self.upstream.load_state_dict(self.pretrained_params)
         logging.info(&quot;Pretrained S3PRL frontend model parameters reloaded!&quot;)
 </code></pre></details></div></div>
-<div class="api-detail" id="e286"><span class="dtag badge-m">method</span><h2><code>S3prlFrontend.output_size()</code></h2><div class="dmod">funasr.frontends.s3prl.S3prlFrontend · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/frontends/s3prl.py#L127" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Output size.</p>
+<div class="api-detail" id="e286"><span class="dtag badge-m">method</span><h2><code>S3prlFrontend.output_size()</code></h2><div class="dmod">funasr.frontends.s3prl.S3prlFrontend · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/frontends/s3prl.py#L133" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Output size.</p>
 </div><details class="src-block"><summary>📄 Source code</summary><pre><code>    def output_size(self) -&gt; int:
         &quot;&quot;&quot;Output size.&quot;&quot;&quot;
         return self.output_dim
 </code></pre></details></div>
-<div class="api-detail" id="e287"><span class="dtag badge-m">method</span><h2><code>S3prlFrontend.forward(input, input_lengths)</code></h2><div class="dmod">funasr.frontends.s3prl.S3prlFrontend · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/frontends/s3prl.py#L131" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Forward pass for training.</p>
+<div class="api-detail" id="e287"><span class="dtag badge-m">method</span><h2><code>S3prlFrontend.forward(input, input_lengths)</code></h2><div class="dmod">funasr.frontends.s3prl.S3prlFrontend · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/frontends/s3prl.py#L137" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Forward pass for training.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>input</code> — Input audio/text data.</li>
@@ -17440,7 +17508,7 @@
 
         return input_feats, feats_lens
 </code></pre></details></div>
-<div class="api-detail" id="e288"><span class="dtag badge-m">method</span><h2><code>S3prlFrontend.reload_pretrained_parameters()</code></h2><div class="dmod">funasr.frontends.s3prl.S3prlFrontend · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/frontends/s3prl.py#L157" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Reload pretrained parameters.</p>
+<div class="api-detail" id="e288"><span class="dtag badge-m">method</span><h2><code>S3prlFrontend.reload_pretrained_parameters()</code></h2><div class="dmod">funasr.frontends.s3prl.S3prlFrontend · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/frontends/s3prl.py#L163" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Reload pretrained parameters.</p>
 </div><details class="src-block"><summary>📄 Source code</summary><pre><code>    def reload_pretrained_parameters(self):
         &quot;&quot;&quot;Reload pretrained parameters.&quot;&quot;&quot;
         self.upstream.load_state_dict(self.pretrained_params)
@@ -20632,7 +20700,7 @@
                 ):
                     data_or_path_or_list_j = load_audio_text_image_video(
 </code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/load_utils.py#L48" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
-<div class="api-detail" id="e381"><span class="dtag badge-f">function</span><h2><code>load_bytes(input)</code></h2><div class="dmod">funasr.utils.load_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/load_utils.py#L187" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Convert audio bytes to numpy array.</p>
+<div class="api-detail" id="e381"><span class="dtag badge-f">function</span><h2><code>load_bytes(input)</code></h2><div class="dmod">funasr.utils.load_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/load_utils.py#L194" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Convert audio bytes to numpy array.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>input (bytes)</code> — Raw audio bytes.</li>
@@ -20671,8 +20739,8 @@
     abs_max = 2 ** (i.bits - 1)
     offset = i.min + abs_max
     array = np.frombuffer((middle_data.astype(dtype) - offset) / abs_max, dtype=np.float32)
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/load_utils.py#L187" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
-<div class="api-detail" id="e382"><span class="dtag badge-f">function</span><h2><code>validate_frame_rate(input, fs)</code></h2><div class="dmod">funasr.utils.load_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/load_utils.py#L220" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Validate frame rate.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/load_utils.py#L194" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
+<div class="api-detail" id="e382"><span class="dtag badge-f">function</span><h2><code>validate_frame_rate(input, fs)</code></h2><div class="dmod">funasr.utils.load_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/load_utils.py#L227" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Validate frame rate.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>input</code> — Input audio/text data.</li>
@@ -20708,8 +20776,8 @@
         output = BytesIO()
         audio.export(output, format=&quot;wav&quot;)
         output.seek(0)
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/load_utils.py#L220" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
-<div class="api-detail" id="e383"><span class="dtag badge-f">function</span><h2><code>extract_fbank(data, data_len, data_type, frontend, **kwargs)</code></h2><div class="dmod">funasr.utils.load_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/load_utils.py#L257" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Extract filter-bank features from audio data.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/load_utils.py#L227" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
+<div class="api-detail" id="e383"><span class="dtag badge-f">function</span><h2><code>extract_fbank(data, data_len, data_type, frontend, **kwargs)</code></h2><div class="dmod">funasr.utils.load_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/load_utils.py#L264" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Extract filter-bank features from audio data.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>data</code> — Audio samples (list of numpy arrays or tensors).</li>
@@ -20751,7 +20819,7 @@
         for data_i in data:
             if isinstance(data_i, np.ndarray):
                 data_i = torch.from_numpy(data_i)
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/load_utils.py#L257" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/load_utils.py#L264" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
 <div class="api-detail" id="e384"><span class="dtag badge-f">function</span><h2><code>statistic_model_parameters(model, prefix)</code></h2><div class="dmod">funasr.utils.misc · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/misc.py#L10" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Statistic model parameters.</p>
 <h4>Args:</h4>
 <ul>
@@ -21829,7 +21897,7 @@
     mask = mask_fn(feats_length)
     print(mask)
 </code></pre></details></div>
-<div class="api-detail" id="e421"><span class="dtag badge-f">function</span><h2><code>str2bool(value)</code></h2><div class="dmod">funasr.utils.type_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/type_utils.py#L9" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Str2bool.</p>
+<div class="api-detail" id="e421"><span class="dtag badge-f">function</span><h2><code>str2bool(value)</code></h2><div class="dmod">funasr.utils.type_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/type_utils.py#L12" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Str2bool.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>value</code> — TODO.</li>
@@ -21842,7 +21910,7 @@
         &quot;&quot;&quot;
     return bool(strtobool(value))
 </code></pre></details></div>
-<div class="api-detail" id="e422"><span class="dtag badge-f">function</span><h2><code>remove_parenthesis(value)</code></h2><div class="dmod">funasr.utils.type_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/type_utils.py#L18" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Remove parenthesis.</p>
+<div class="api-detail" id="e422"><span class="dtag badge-f">function</span><h2><code>remove_parenthesis(value)</code></h2><div class="dmod">funasr.utils.type_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/type_utils.py#L21" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Remove parenthesis.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>value</code> — TODO.</li>
@@ -21860,7 +21928,7 @@
         value = value[1:-1]
     return value
 </code></pre></details></div>
-<div class="api-detail" id="e423"><span class="dtag badge-f">function</span><h2><code>remove_quotes(value)</code></h2><div class="dmod">funasr.utils.type_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/type_utils.py#L32" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Remove quotes.</p>
+<div class="api-detail" id="e423"><span class="dtag badge-f">function</span><h2><code>remove_quotes(value)</code></h2><div class="dmod">funasr.utils.type_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/type_utils.py#L35" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Remove quotes.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>value</code> — TODO.</li>
@@ -21878,7 +21946,7 @@
         value = value[1:-1]
     return value
 </code></pre></details></div>
-<div class="api-detail" id="e424"><span class="dtag badge-f">function</span><h2><code>int_or_none(value)</code></h2><div class="dmod">funasr.utils.type_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/type_utils.py#L46" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>int_or_none.</p>
+<div class="api-detail" id="e424"><span class="dtag badge-f">function</span><h2><code>int_or_none(value)</code></h2><div class="dmod">funasr.utils.type_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/type_utils.py#L49" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>int_or_none.</p>
 <h4>Examples:</h4>
 <p>&gt;&gt;&gt; import argparse</p>
 <p>&gt;&gt;&gt; parser = argparse.ArgumentParser()</p>
@@ -21912,7 +21980,7 @@
         return None
     return int(value)
 </code></pre></details></div>
-<div class="api-detail" id="e425"><span class="dtag badge-f">function</span><h2><code>float_or_none(value)</code></h2><div class="dmod">funasr.utils.type_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/type_utils.py#L68" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>float_or_none.</p>
+<div class="api-detail" id="e425"><span class="dtag badge-f">function</span><h2><code>float_or_none(value)</code></h2><div class="dmod">funasr.utils.type_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/type_utils.py#L71" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>float_or_none.</p>
 <h4>Examples:</h4>
 <p>&gt;&gt;&gt; import argparse</p>
 <p>&gt;&gt;&gt; parser = argparse.ArgumentParser()</p>
@@ -21946,7 +22014,7 @@
         return None
     return float(value)
 </code></pre></details></div>
-<div class="api-detail" id="e426"><span class="dtag badge-f">function</span><h2><code>humanfriendly_parse_size_or_none(value)</code></h2><div class="dmod">funasr.utils.type_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/type_utils.py#L90" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Humanfriendly parse size or none.</p>
+<div class="api-detail" id="e426"><span class="dtag badge-f">function</span><h2><code>humanfriendly_parse_size_or_none(value)</code></h2><div class="dmod">funasr.utils.type_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/type_utils.py#L93" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Humanfriendly parse size or none.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>value</code> — TODO.</li>
@@ -21959,9 +22027,11 @@
         &quot;&quot;&quot;
     if value.strip().lower() in (&quot;none&quot;, &quot;null&quot;, &quot;nil&quot;):
         return None
+    if humanfriendly is None:
+        raise ImportError(&quot;humanfriendly is required for parse_size. Install with: pip install humanfriendly&quot;)
     return humanfriendly.parse_size(value)
 </code></pre></details></div>
-<div class="api-detail" id="e427"><span class="dtag badge-f">function</span><h2><code>str_or_int(value)</code></h2><div class="dmod">funasr.utils.type_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/type_utils.py#L101" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Str or int.</p>
+<div class="api-detail" id="e427"><span class="dtag badge-f">function</span><h2><code>str_or_int(value)</code></h2><div class="dmod">funasr.utils.type_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/type_utils.py#L106" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Str or int.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>value</code> — TODO.</li>
@@ -21977,7 +22047,7 @@
     except ValueError:
         return value
 </code></pre></details></div>
-<div class="api-detail" id="e428"><span class="dtag badge-f">function</span><h2><code>str_or_none(value)</code></h2><div class="dmod">funasr.utils.type_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/type_utils.py#L113" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>str_or_none.</p>
+<div class="api-detail" id="e428"><span class="dtag badge-f">function</span><h2><code>str_or_none(value)</code></h2><div class="dmod">funasr.utils.type_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/type_utils.py#L118" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>str_or_none.</p>
 <h4>Examples:</h4>
 <p>&gt;&gt;&gt; import argparse</p>
 <p>&gt;&gt;&gt; parser = argparse.ArgumentParser()</p>
@@ -22011,7 +22081,7 @@
         return None
     return value
 </code></pre></details></div>
-<div class="api-detail" id="e429"><span class="dtag badge-f">function</span><h2><code>str2pair_str(value)</code></h2><div class="dmod">funasr.utils.type_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/type_utils.py#L135" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>str2pair_str.</p>
+<div class="api-detail" id="e429"><span class="dtag badge-f">function</span><h2><code>str2pair_str(value)</code></h2><div class="dmod">funasr.utils.type_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/type_utils.py#L140" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>str2pair_str.</p>
 <h4>Examples:</h4>
 <p>&gt;&gt;&gt; import argparse</p>
 <p>&gt;&gt;&gt; str2pair_str(&#x27;abc,def &#x27;)</p>
@@ -22043,7 +22113,7 @@
     # so we need to remove double quotes from it.
     return remove_quotes(a), remove_quotes(b)
 </code></pre></details></div>
-<div class="api-detail" id="e430"><span class="dtag badge-f">function</span><h2><code>str2triple_str(value)</code></h2><div class="dmod">funasr.utils.type_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/type_utils.py#L159" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>str2triple_str.</p>
+<div class="api-detail" id="e430"><span class="dtag badge-f">function</span><h2><code>str2triple_str(value)</code></h2><div class="dmod">funasr.utils.type_utils · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/utils/type_utils.py#L164" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>str2triple_str.</p>
 <h4>Examples:</h4>
 <p>&gt;&gt;&gt; str2triple_str(&#x27;abc,def ,ghi&#x27;)</p>
 <p>(&#x27;abc&#x27;, &#x27;def&#x27;, &#x27;ghi&#x27;)</p>
@@ -22220,37 +22290,37 @@
     else:
         print(f&quot;You are using the latest version of funasr-{current_version}&quot;)
 </code></pre></details></div>
-<div class="api-detail" id="e436"><span class="dtag badge-f">function</span><h2><code>create_app(device, preload_model)</code></h2><div class="dmod">funasr.bin._server_app · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/bin/_server_app.py#L40" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p class="muted">No documentation yet.</p></div><details class="src-block"><summary>📄 Source code</summary><pre><code>def create_app(device: str = &quot;cuda&quot;, preload_model: str = &quot;auto&quot;) -&gt; FastAPI:
+<div class="api-detail" id="e436"><span class="dtag badge-f">function</span><h2><code>create_app(device, preload_model)</code></h2><div class="dmod">funasr.bin._server_app · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/bin/_server_app.py#L29" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p class="muted">No documentation yet.</p></div><details class="src-block"><summary>📄 Source code</summary><pre><code>def create_app(device: str = &quot;cuda&quot;, preload_model: str = &quot;auto&quot;) -&gt; FastAPI:
     if preload_model == &quot;auto&quot;:
         preload_model = &quot;fun-asr-nano&quot; if device.startswith(&quot;cuda&quot;) else &quot;sensevoice&quot;
-    app = FastAPI(title=&quot;FunASR Server&quot;, version=&quot;1.3.2&quot;)
-    app.state.models = {}
+
+    app = FastAPI(title=&quot;FunASR Server&quot;, version=&quot;1.3.6&quot;)
     app.state.device = device
+    app.state.engine = None
+    app.state.vad_model = None
+    app.state.fallback_models = {}
 
-    def _load_model(name: str):
-        if name in app.state.models:
-            return app.state.models[name]
-        if name not in MODEL_CONFIGS:
-            raise ValueError(f&quot;Unknown model: {name}. Available: {list(MODEL_CONFIGS.keys())}&quot;)
-        from funasr import AutoModel
-        cfg = MODEL_CONFIGS[name].copy()
-        cfg[&quot;device&quot;] = app.state.device
-        cfg[&quot;disable_update&quot;] = True
-        logger.info(f&quot;Loading &#x27;{name}&#x27; on {device}...&quot;)
-        t0 = time.time()
-        model = AutoModel(**cfg)
-        logger.info(f&quot;&#x27;{name}&#x27; ready in {time.time()-t0:.1f}s&quot;)
-        app.state.models[name] = model
-        return model
+    # Non-LLM model configs (use AutoModel, no vLLM)
+    FALLBACK_CONFIGS = {
+        &quot;sensevoice&quot;: {
+            &quot;model&quot;: &quot;iic/SenseVoiceSmall&quot;,
+            &quot;vad_model&quot;: &quot;fsmn-vad&quot;,
+            &quot;vad_kwargs&quot;: {&quot;max_single_segment_time&quot;: 30000},
+        },
+        &quot;paraformer&quot;: {
+            &quot;model&quot;: &quot;paraformer-zh&quot;,
+            &quot;vad_model&quot;: &quot;fsmn-vad&quot;,
+            &quot;punc_model&quot;: &quot;ct-punc&quot;,
+        },
+    }
 
-    # Pre-load
-    _load_model(preload_model)
-
-    @app.post(&quot;/v1/audio/transcriptions&quot;)
-    async def transcribe(
-        file: UploadFile = File(...),
-        model: str = Form(default=&quot;sensevoice&quot;),
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/bin/_server_app.py#L40" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
+    def _load_vllm_engine():
+        &quot;&quot;&quot;Load Fun-ASR-Nano vLLM engine. Falls back to AutoModel if vLLM unavailable.&quot;&quot;&quot;
+        if app.state.engine is not None:
+            return
+        try:
+            from funasr.models.fun_asr_nano.inference_vllm import FunASRNanoVLLM
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/bin/_server_app.py#L29" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
 <div class="api-detail" id="e437"><span class="dtag badge-f">function</span><h2><code>main_hydra(kwargs)</code></h2><div class="dmod">funasr.bin.compute_audio_cmvn · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/bin/compute_audio_cmvn.py#L15" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Main hydra.</p>
 <h4>Args:</h4>
 <ul>
@@ -22408,10 +22478,10 @@ Then use with OpenAI SDK:
         import fastapi
     except ImportError:
         print(&quot;Error: funasr-server requires additional packages.&quot;)
-        print(&quot;Install with: pip install fastapi uvicorn python-multipart&quot;)
+        print(&quot;Install with: pip install vllm fastapi uvicorn python-multipart&quot;)
         sys.exit(1)
 </code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/bin/server.py#L14" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
-<div class="api-detail" id="e442"><span class="dtag badge-f">function</span><h2><code>field2slice(field)</code></h2><div class="dmod">funasr.bin.tokenize_text · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/bin/tokenize_text.py#L19" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Convert field string to slice</p>
+<div class="api-detail" id="e442"><span class="dtag badge-f">function</span><h2><code>field2slice(field)</code></h2><div class="dmod">funasr.bin.tokenize_text · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/bin/tokenize_text.py#L23" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Convert field string to slice</p>
 <p>Note that field string accepts 1-based integer.</p>
 <h4>Examples:</h4>
 <p>&gt;&gt;&gt; field2slice(&quot;1-&quot;)</p>
@@ -22450,8 +22520,8 @@ Then use with OpenAI SDK:
                 s2 = int(s2)
         else:
             # e.g. &quot;2&quot;
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/bin/tokenize_text.py#L19" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
-<div class="api-detail" id="e443"><span class="dtag badge-f">function</span><h2><code>tokenize(input, output, field, delimiter, token_type, space_symbol, non_linguistic_symbols, bpemodel, log_level, write_vocabulary, vocabulary_size, remove_non_linguistic_symbols, cutoff, add_symbol, cleaner, g2p)</code></h2><div class="dmod">funasr.bin.tokenize_text · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/bin/tokenize_text.py#L65" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Tokenize.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/bin/tokenize_text.py#L23" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
+<div class="api-detail" id="e443"><span class="dtag badge-f">function</span><h2><code>tokenize(input, output, field, delimiter, token_type, space_symbol, non_linguistic_symbols, bpemodel, log_level, write_vocabulary, vocabulary_size, remove_non_linguistic_symbols, cutoff, add_symbol, cleaner, g2p)</code></h2><div class="dmod">funasr.bin.tokenize_text · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/bin/tokenize_text.py#L69" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Tokenize.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>input</code> — Input audio/text data.</li>
@@ -22501,8 +22571,8 @@ Then use with OpenAI SDK:
             space_symbol: TODO.
             non_linguistic_symbols: TODO.
             bpemodel: TODO.
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/bin/tokenize_text.py#L65" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
-<div class="api-detail" id="e444"><span class="dtag badge-f">function</span><h2><code>get_parser()</code></h2><div class="dmod">funasr.bin.tokenize_text · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/bin/tokenize_text.py#L207" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Get parser.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/bin/tokenize_text.py#L69" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
+<div class="api-detail" id="e444"><span class="dtag badge-f">function</span><h2><code>get_parser()</code></h2><div class="dmod">funasr.bin.tokenize_text · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/bin/tokenize_text.py#L211" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Get parser.</p>
 </div><details class="src-block"><summary>📄 Source code</summary><pre><code>def get_parser() -&gt; argparse.ArgumentParser:
     &quot;&quot;&quot;Get parser.&quot;&quot;&quot;
     parser = argparse.ArgumentParser(
@@ -22533,8 +22603,8 @@ Then use with OpenAI SDK:
     )
     parser.add_argument(&quot;--delimiter&quot;, &quot;-d&quot;, default=None, help=&quot;The delimiter&quot;)
     parser.add_argument(&quot;--space_symbol&quot;, default=&quot;&lt;space&gt;&quot;, help=&quot;The space symbol&quot;)
-</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/bin/tokenize_text.py#L207" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
-<div class="api-detail" id="e445"><span class="dtag badge-f">function</span><h2><code>main(cmd)</code></h2><div class="dmod">funasr.bin.tokenize_text · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/bin/tokenize_text.py#L289" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Main.</p>
+</code></pre><a href="https://github.com/modelscope/FunASR/blob/main/funasr/bin/tokenize_text.py#L211" target="_blank" class="src-more">View full source on GitHub →</a></details></div>
+<div class="api-detail" id="e445"><span class="dtag badge-f">function</span><h2><code>main(cmd)</code></h2><div class="dmod">funasr.bin.tokenize_text · <a href="https://github.com/modelscope/FunASR/blob/main/funasr/bin/tokenize_text.py#L293" target="_blank">View on GitHub ↗</a></div><div class="ddoc"><p>Main.</p>
 <h4>Args:</h4>
 <ul>
 <li><code>cmd</code> — TODO.</li>
@@ -25456,7 +25526,7 @@ Then use with OpenAI SDK:
         scheduler = kwargs.get(&quot;scheduler&quot;, &quot;warmuplr&quot;)
         assert scheduler in scheduler_classes
         scheduler_class = scheduler_classes.get(scheduler)
-        scheduler = scheduler_class(optim, **kwargs.get(&quot;scheduler_conf&quot;))
+        scheduler = scheduler_class(optim, **(kwargs.get(&quot;scheduler_conf&quot;) or {}))
 
         if self.use_deepspeed:
             import deepspeed
@@ -25828,7 +25898,7 @@ Then use with OpenAI SDK:
         scheduler = kwargs.get(&quot;scheduler&quot;, &quot;warmuplr&quot;)
         assert scheduler in scheduler_classes
         scheduler_class = scheduler_classes.get(scheduler)
-        scheduler = scheduler_class(optim, **kwargs.get(&quot;scheduler_conf&quot;))
+        scheduler = scheduler_class(optim, **(kwargs.get(&quot;scheduler_conf&quot;) or {}))
 
         if self.use_deepspeed:
             import deepspeed
